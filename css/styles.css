@@ -1,0 +1,88 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #e4e4e4;
+
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
+    sans-serif;
+}
+
+/* Container */
+.tabs {
+  margin-top: 10px;
+}
+
+/* Tabs */
+.controls {
+  text-align: center;
+}
+
+/* Tabs link */
+.controls__item {
+  display: inline-block;
+  padding: 10px 15px;
+  border: 1px solid #979695;
+
+  background-color: #d3d9ea;
+  color: black;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  opacity: 1;
+
+  transition: opacity 250ms ease-in-out;
+}
+
+.controls__item:not(:last-child) {
+  margin-right: 5px;
+}
+
+.controls__item:hover {
+  opacity: 0.8;
+}
+
+/* Active tab */
+.controls__item--active {
+  background-color: #8a2be2;
+  color: #ffffff;
+}
+
+/* Panes */
+.pane {
+  display: none;
+  padding: 15px;
+
+  border-bottom: 1px solid #a5a2a2;
+
+  animation: fadein 500ms;
+}
+
+/* Active pane */
+.pane--active {
+  display: block;
+}
+
+/* Pane title */
+.pane__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* Pane text */
+.pane__text {
+  margin: 0;
+}
+
+/* Animation */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
